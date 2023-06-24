@@ -1,0 +1,696 @@
+/* CSS Normalize*/
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 4000px;
+  background-image: url(../images/header_background.png);
+  background-size: cover;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+/* Navigation */
+.to-talk {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: baseline;
+  position: relative;
+  left: 80%;
+  margin-top: 1%;
+  font-size: 20px;
+}
+
+.to-talk__circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 25px;
+  border: 1px solid #fff;
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Header */
+.header--info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.header--info--caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+}
+
+.header--info--desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  text-align: center;
+  color: #D1D5DB
+}
+
+.header--info--circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background-color: #FFFFFF33;
+  box-shadow: 1px 1px 150px darkviolet;
+  margin-top: 3%;
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Мои работы */
+.work {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-top: 10%;
+  padding: 5%;
+}
+
+.work__header {
+  display: grid;
+  justify-content: end;
+  align-items: end;
+  grid-template-columns: 68% 32%;
+  margin-left: 3%;
+
+  .work__header--text {
+    width: 70%;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    color: #9CA3AF;
+  }
+}
+
+.work__skills {
+  display: flex;
+  gap: 5%;
+
+  .skill {
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+    gap: 5%;
+
+    p {
+      min-width: 100%;
+    }
+
+    i {
+      font-size: 25px;
+    }
+
+    &:nth-child(1) i {
+      color: #3B82F6;
+    }
+
+    &:nth-child(2) i {
+      color: #EAB308;
+    }
+
+    &:nth-child(3) i {
+      color: #06B6D4;
+    }
+  }
+}
+
+.work__my-works {
+  display: flex;
+  gap: 3%;
+  margin-left: 3%;
+}
+
+.my-works__work {
+  width: 30%;
+  height: 500px;
+  margin-top: 3%;
+
+  .my-works__work--image {
+    width: 100%;
+    height: 50%;
+    border-radius: 3%;
+  }
+
+  .my-works__work--desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .work--desc--circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #FFFFFF66;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.readMore {
+  width: 200px;
+  height: 50px;
+  background: #6C4BEF;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 20px;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+/* Отзывы */
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 15%;
+
+  h2 {
+    font-size: 60px;
+  }
+
+  p {
+    color: #9CA3AF;
+  }
+}
+
+.reviews__blocks {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 40% 60%;
+  height: 500px;
+  width: 100%;
+  gap: 5%;
+  margin-top: 5%;
+
+  .reviews__block {
+    background: rgba(31, 41, 55, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 5%;
+    text-align: left;
+
+    &:nth-child(3) {
+      grid-column: 2;
+      grid-row: 1 / 3;
+      font-size: 35px;
+
+      a::after {
+        margin-bottom: 20%;
+      }
+    }
+
+    q {
+      display: block;
+      font-size: 25px;
+    }
+
+    address {
+      font-size: 30px;
+      margin-top: 10%;
+      font-weight: 600;
+    }
+
+    a {
+      display: inline-block;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 0%;
+        height: 1px;
+        background-color: #000;
+        transition: all .2s linear;
+        margin-bottom: 10%;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.reviews__stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  padding: 5%;
+  margin-top: 10%;
+  background: #6C4BEF;
+  border-radius: 12px;
+
+  h3 {
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .stats__block:nth-child(1) h3,
+  .stats__block:nth-child(2) h3 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 150px;
+      width: 1px;
+      background-color: #9D86F4;
+      position: absolute;
+      top: -30%;
+    }
+  }
+
+
+  .stats__block:nth-child(1) h3::after {
+    left: 170%;
+  }
+
+  .stats__block:nth-child(2) h3::after {
+    left: 230%;
+  }
+}
+
+/* Мои блоги */
+.blog {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 10%;
+
+  .blog__header {
+    color: #fff;
+    margin-left: 3%;
+
+    h2 {
+      font-size: 45px;
+    }
+
+    p {
+      color: #9CA3AF;
+    }
+  }
+}
+
+.blog__my-blogs {
+  display: flex;
+  gap: 3%;
+  margin-left: 3%;
+}
+
+.my-blogs__blog {
+  width: 30%;
+  height: 500px;
+  margin-top: 3%;
+
+  .my-blogs__blog--image {
+    width: 100%;
+    height: 50%;
+    border-radius: 3%;
+  }
+
+  .my-blogs__blog--desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #D1D5DB;
+    margin-top: 1%;
+
+    p {
+      width: 90%;
+      font-size: 20px;
+    }
+
+    .blog--desc--circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #FFFFFF66;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Моя история */
+.author_story {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10%;
+  min-height: 700px;
+  align-items: center;
+
+  .author {
+    color: #E5E7EB;
+    text-align: center;
+
+    img {
+      width: 30%;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    p {
+      width: 50%;
+      position: relative;
+      left: 25%;
+    }
+
+    .story__youtube::after {
+      content: '';
+      display: block;
+      width: 5%;
+      height: 2px;
+      background-color: rgb(90, 5, 126);
+      transition: all .2s linear;
+      position: relative;
+      left: 60%;
+    }
+
+    .story__youtube:hover::after {
+      width: 35%;
+    }
+
+    .story__to-talk {
+      display: inline-flex;
+      align-items: baseline;
+      justify-content: baseline;
+      font-size: 20px;
+      margin-top: 1%;
+    }
+
+    .story__to-talk__circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 25px;
+      border: 1px solid #fff;
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .story {
+
+    h2 {
+      color: #fff;
+      font-size: 50px;
+    }
+
+    p {
+      width: 80%;
+      font-size: 25px;
+      color: #b5bfd3;
+      line-height: 40px;
+    }
+  }
+}
+
+/* Footer */
+footer {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 80%;
+  padding: 15%;
+  padding-top: 0;
+
+  .socials {
+    display: flex;
+    gap: 10%;
+
+    .socials__circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 30px;
+      background-color: #fff;
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+      }
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 760px) {
+
+  /* Navigation */
+  .to-talk {
+    margin-top: 5%;
+  }
+
+  /* Header */
+  .header--info {
+    margin-top: 10%;
+  }
+
+  .header--info--caption {
+    font-size: 30px;
+    margin-bottom: 3%;
+  }
+
+  .header--info--desc {
+    font-size: 15px;
+  }
+
+  /* Мои работы */
+  .work {
+    padding: 10%;
+
+    .work__header {
+      grid-template-columns: 1fr;
+
+      .work__skills {
+        margin-top: 3%;
+
+        p {
+          min-width: 0;
+        }
+      }
+
+      .work__header--text {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .work__my-works {
+      flex-direction: column;
+
+      .my-works__work {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5%;
+      }
+    }
+  }
+
+  .readMore {
+    margin-top: 35%;
+  }
+
+  /* Отзывы */
+  .reviews {
+    padding: 10%;
+  }
+
+  .reviews__blocks {
+    height: 300px;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+    .reviews__block:nth-child(3) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+  }
+
+  .reviews__stats {
+    height: 600px;
+    flex-direction: column;
+    margin-top: 190%;
+
+    .stats__block:nth-child(1) h3::after,
+    .stats__block:nth-child(2) h3::after {
+      height: 1px;
+      width: 150px;
+      left: -5%;
+      top: 195%;
+    }
+
+    .stats__block:nth-child(2) h3::after {
+      left: -20%;
+    }
+  }
+
+  /* Мои блоги */
+  .blog {
+
+    .blog__header--text {
+      width: 100%;
+      text-align: center;
+    }
+
+    .blog__my-blogs {
+      gap: 100px;
+      flex-direction: column;
+
+      .my-blogs__blog--image {
+        height: 100%;
+      }
+
+      .my-blogs__blog {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+
+  /* Моя история */
+  .author_story {
+    grid-template-columns: 1fr;
+    position: relative;
+    padding: 5%;
+
+    .author {
+      .story__youtube::after {
+        left: 30%;
+      }
+
+      .story__youtube:hover::after {
+        width: 40%;
+      }
+
+      .story__to-talk {
+        position: absolute;
+        top: 100%;
+        left: 42%;
+      }
+
+      .story__to-talk__circle {
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+      }
+
+      p {
+        display: inline-flex;
+        flex-direction: column;
+        left: 0;
+      }
+    }
+
+    .story {
+      h2 {
+        display: inline;
+        position: relative;
+        bottom: 85%;
+        left: 20%;
+      }
+
+      p {
+        width: 100%;
+        position: relative;
+        bottom: -20%;
+        text-align: center;
+      }
+    }
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    position: relative;
+    top: 150px;
+    gap: 10px;
+  }
+}
