@@ -7,6 +7,6 @@
    1. Склонируйте данный репозиторий.
    2. Откройте файл ```index.html```
    
-Или вы можете просто зайти на [сайт](https://kriswis.github.io/Portfolio/), загруженный на Github Pages.
+Или вы можете просто зайти на [сайт](https://evgeniywis.github.io/Portfolio/), загруженный на Github Pages.
  # Макет вёрстки
 ![Desktop](https://github.com/KrisWis/Portfolio/assets/94256853/db052fd0-20b2-4db7-ad48-9b4077578338)
